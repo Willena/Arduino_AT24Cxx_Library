@@ -151,7 +151,7 @@ uint8_t AT24Cxx::WriteMem(int iAddr, const char *pBuf, int iCnt)
     iCnt -=(int)iBytes;
     iAddr+=(int)iBytes;
     pBuf +=(int)iBytes;
-    delay(50);  // Give the EEPROM time to write its data
+    delay(5);  // Give the EEPROM time to write its data
   }  /* while */
 
   return(iRC);
